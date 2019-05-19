@@ -2,6 +2,7 @@ const path = require('path')
 const fs = require('fs')
 
 exports.createPages = async({actions}) => {
+    const { createPage } = actions
     const data = JSON.parse(
         fs.readFileSync('src/data/programs.json')
     )
