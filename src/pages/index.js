@@ -5,10 +5,12 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 import Content from "../components/content"
+import Navigation from "../components/navigation"
 
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
+    <Navigation nav={["contact", "aboutus"]} />
     <h1>Hi people</h1>
     <Content />
     <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
